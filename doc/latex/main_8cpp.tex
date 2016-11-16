@@ -1,0 +1,140 @@
+\hypertarget{main_8cpp}{}\section{main.\+cpp File Reference}
+\label{main_8cpp}\index{main.\+cpp@{main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$G\+L/glew.\+h$>$}\newline
+{\ttfamily \#include $<$G\+L\+F\+W/glfw3.\+h$>$}\newline
+{\ttfamily \#include $<$glm/glm.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/type\+\_\+ptr.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}Shader.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Camera.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}cube\+Verts.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{main_8cpp_aa48aaf412b9e33386433680c25b3883c}{key\+\_\+callback} (G\+L\+F\+Wwindow $\ast$window, int key, int scancode, int action, int mode)
+\begin{DoxyCompactList}\small\item\em Handles Keyboard Input. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_af4ca2891044ac10a664b8d83ce590f1f}{mouse\+\_\+callback} (G\+L\+F\+Wwindow $\ast$window, double xpos, double ypos)
+\begin{DoxyCompactList}\small\item\em Handles Mouse cursor Input. \end{DoxyCompactList}\item 
+void \hyperlink{main_8cpp_a2ded529241842b7cd149bdd027708537}{scroll\+\_\+callback} (G\+L\+F\+Wwindow $\ast$windoe, double xoffset, double yoffset)
+\begin{DoxyCompactList}\small\item\em Handles Mouse Scroll Input. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a7f9c9db8e4782d31531eb6b8528fb373}{}\label{main_8cpp_a7f9c9db8e4782d31531eb6b8528fb373} 
+void {\bfseries do\+\_\+movement} ()
+\item 
+int \hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{main_8cpp_a02a2dea7b13a988d0086162033ed95a0}{}\label{main_8cpp_a02a2dea7b13a988d0086162033ed95a0} 
+const G\+Luint \hyperlink{main_8cpp_a02a2dea7b13a988d0086162033ed95a0}{W\+I\+D\+TH} = 1280
+\begin{DoxyCompactList}\small\item\em Width of the window. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a45d3f53fb83f7542d154b0222bf523d6}{}\label{main_8cpp_a45d3f53fb83f7542d154b0222bf523d6} 
+const G\+Luint \hyperlink{main_8cpp_a45d3f53fb83f7542d154b0222bf523d6}{H\+E\+I\+G\+HT} = 720
+\begin{DoxyCompactList}\small\item\em Height of the window. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_ac30355235d44e8f7b0a538a510bcbbeb}{}\label{main_8cpp_ac30355235d44e8f7b0a538a510bcbbeb} 
+bool \hyperlink{main_8cpp_ac30355235d44e8f7b0a538a510bcbbeb}{down} =false
+\begin{DoxyCompactList}\small\item\em For the projector movement in the scene. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a9b6faf46c6fc2985212f3decff95de26}{}\label{main_8cpp_a9b6faf46c6fc2985212f3decff95de26} 
+G\+Lfloat \hyperlink{main_8cpp_a9b6faf46c6fc2985212f3decff95de26}{projector\+Length}
+\begin{DoxyCompactList}\small\item\em Length upto which projector is unfurled. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a7e9b4829332ff2c65ac7ab6fe97f5401}{}\label{main_8cpp_a7e9b4829332ff2c65ac7ab6fe97f5401} 
+\hyperlink{class_camera}{Camera} \hyperlink{main_8cpp_a7e9b4829332ff2c65ac7ab6fe97f5401}{camera} (glm\+::vec3(0.\+0f, 50.\+0f, 53.\+0f))
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_camera}{Camera} Object Creation. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a3a217745c5eebfcdb3e21cbc9bcdc07a}{}\label{main_8cpp_a3a217745c5eebfcdb3e21cbc9bcdc07a} 
+bool \hyperlink{main_8cpp_a3a217745c5eebfcdb3e21cbc9bcdc07a}{keys} \mbox{[}1024\mbox{]}
+\begin{DoxyCompactList}\small\item\em To Keey Track of currently pressed keys (Smooth camera movement) \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_adf7cb443fa70a647d5603ee33b392102}{}\label{main_8cpp_adf7cb443fa70a647d5603ee33b392102} 
+G\+Lfloat \hyperlink{main_8cpp_adf7cb443fa70a647d5603ee33b392102}{delta\+Time} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Time between current frame and last frame. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a606e9490a5462c2c60b30dc76ff573a1}{}\label{main_8cpp_a606e9490a5462c2c60b30dc76ff573a1} 
+G\+Lfloat \hyperlink{main_8cpp_a606e9490a5462c2c60b30dc76ff573a1}{last\+Frame} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Time of last frame. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a2e16a74f44432ba28cfc03e1f2fae336}{}\label{main_8cpp_a2e16a74f44432ba28cfc03e1f2fae336} 
+G\+Lfloat \hyperlink{main_8cpp_a2e16a74f44432ba28cfc03e1f2fae336}{lastX} =400
+\begin{DoxyCompactList}\small\item\em Last x position of mouse. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_af9b48b88a5ab39920f21309262086ef0}{}\label{main_8cpp_af9b48b88a5ab39920f21309262086ef0} 
+G\+Lfloat \hyperlink{main_8cpp_af9b48b88a5ab39920f21309262086ef0}{lastY} = 300
+\begin{DoxyCompactList}\small\item\em Last y position of mouse. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_ac21731ba101e28334c34543121caa841}{}\label{main_8cpp_ac21731ba101e28334c34543121caa841} 
+bool \hyperlink{main_8cpp_ac21731ba101e28334c34543121caa841}{first\+Mouse} =true
+\begin{DoxyCompactList}\small\item\em To avoid jerk when mouse first comes into window. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_ae5543471fb84a3f6da432286aa23208a}{}\label{main_8cpp_ae5543471fb84a3f6da432286aa23208a} 
+G\+Lfloat \hyperlink{main_8cpp_ae5543471fb84a3f6da432286aa23208a}{near\+Plane} =0.\+1f
+\begin{DoxyCompactList}\small\item\em Smallest z-\/value to draw from. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a3695585db37f3ac5341f435dac13df5c}{}\label{main_8cpp_a3695585db37f3ac5341f435dac13df5c} 
+G\+Lfloat \hyperlink{main_8cpp_a3695585db37f3ac5341f435dac13df5c}{far\+Plane} =500.\+0f
+\begin{DoxyCompactList}\small\item\em Largest z-\/value to draw till. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a27322e7b3c3c6dbe0df15a98989d452e}{}\label{main_8cpp_a27322e7b3c3c6dbe0df15a98989d452e} 
+G\+Lfloat \hyperlink{main_8cpp_a27322e7b3c3c6dbe0df15a98989d452e}{temp} =0.\+0
+\begin{DoxyCompactList}\small\item\em For length of speaker animation lines. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_aff702880ff2462faa4b2b005520c93e4}{}\label{main_8cpp_aff702880ff2462faa4b2b005520c93e4} 
+bool \hyperlink{main_8cpp_aff702880ff2462faa4b2b005520c93e4}{speak\+Inc} =true
+\begin{DoxyCompactList}\small\item\em Whether speaker lines should be increased or decreased. \end{DoxyCompactList}\item 
+\hypertarget{main_8cpp_a3534e84dbc5ddde8f1591846279ba126}{}\label{main_8cpp_a3534e84dbc5ddde8f1591846279ba126} 
+bool \hyperlink{main_8cpp_a3534e84dbc5ddde8f1591846279ba126}{speaker} =false
+\begin{DoxyCompactList}\small\item\em Whether to show speaker lines. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{main_8cpp_aa48aaf412b9e33386433680c25b3883c}{}\label{main_8cpp_aa48aaf412b9e33386433680c25b3883c} 
+\index{main.\+cpp@{main.\+cpp}!key\+\_\+callback@{key\+\_\+callback}}
+\index{key\+\_\+callback@{key\+\_\+callback}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{key\+\_\+callback()}{key\_callback()}}
+{\footnotesize\ttfamily void key\+\_\+callback (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{int}]{key,  }\item[{int}]{scancode,  }\item[{int}]{action,  }\item[{int}]{mode }\end{DoxyParamCaption})}
+
+
+
+Handles Keyboard Input. 
+
+Is called whenever a key is pressed/released via G\+L\+FW.~\newline
+Processes User Interaction through the keyboard to manipulate the keyboard 
+\begin{DoxyParams}{Parameters}
+{\em window} & the window in which event was generated \\
+\hline
+{\em key} & The key which caused the event \\
+\hline
+{\em action} & Whether the key was pressed or released \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+The M\+A\+IN function, from here we start the application and run the game loop, refer to code for implementation details \hypertarget{main_8cpp_af4ca2891044ac10a664b8d83ce590f1f}{}\label{main_8cpp_af4ca2891044ac10a664b8d83ce590f1f} 
+\index{main.\+cpp@{main.\+cpp}!mouse\+\_\+callback@{mouse\+\_\+callback}}
+\index{mouse\+\_\+callback@{mouse\+\_\+callback}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{mouse\+\_\+callback()}{mouse\_callback()}}
+{\footnotesize\ttfamily void mouse\+\_\+callback (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{window,  }\item[{double}]{xpos,  }\item[{double}]{ypos }\end{DoxyParamCaption})}
+
+
+
+Handles Mouse cursor Input. 
+
+Is called whenever the mouse is moved within the window, Changes the angles and vectors of camera class to alter view. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Window in which event was caused \\
+\hline
+{\em xpos,ypos} & Mouse Position when even was caused \\
+\hline
+\end{DoxyParams}
+\hypertarget{main_8cpp_a2ded529241842b7cd149bdd027708537}{}\label{main_8cpp_a2ded529241842b7cd149bdd027708537} 
+\index{main.\+cpp@{main.\+cpp}!scroll\+\_\+callback@{scroll\+\_\+callback}}
+\index{scroll\+\_\+callback@{scroll\+\_\+callback}!main.\+cpp@{main.\+cpp}}
+\subsubsection{\texorpdfstring{scroll\+\_\+callback()}{scroll\_callback()}}
+{\footnotesize\ttfamily void scroll\+\_\+callback (\begin{DoxyParamCaption}\item[{G\+L\+F\+Wwindow $\ast$}]{windoe,  }\item[{double}]{xoffset,  }\item[{double}]{yoffset }\end{DoxyParamCaption})}
+
+
+
+Handles Mouse Scroll Input. 
+
+Zooms on scrool movement. 
+\begin{DoxyParams}{Parameters}
+{\em window} & Window in which event was caused \\
+\hline
+{\em xpos,ypos} & Mouse Position when even was caused \\
+\hline
+\end{DoxyParams}

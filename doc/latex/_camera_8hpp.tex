@@ -1,0 +1,69 @@
+\hypertarget{_camera_8hpp}{}\section{Camera.\+hpp File Reference}
+\label{_camera_8hpp}\index{Camera.\+hpp@{Camera.\+hpp}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$G\+L/glew.\+h$>$}\newline
+{\ttfamily \#include $<$glm/glm.\+hpp$>$}\newline
+{\ttfamily \#include $<$glm/gtc/matrix\+\_\+transform.\+hpp$>$}\newline
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_camera}{Camera}
+\begin{DoxyCompactList}\small\item\em \hyperlink{class_camera}{Camera} Class for Scene\textquotesingle{}s single \hyperlink{class_camera}{Camera}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcb}{Camera\+\_\+\+Movement} \{ \hyperlink{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbaa26736999186daf8146f809e863712a1}{F\+O\+R\+W\+A\+RD}, 
+\hyperlink{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbafed2fca77e454294d6b8bda1bf2c9fd6}{B\+A\+C\+K\+W\+A\+RD}, 
+\hyperlink{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbadb45120aafd37a973140edee24708065}{L\+E\+FT}, 
+\hyperlink{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbaec8379af7490bb9eaaf579cf17876f38}{R\+I\+G\+HT}
+ \}\begin{DoxyCompactList}\small\item\em Used to Define the Direction of movement of the camera. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{_camera_8hpp_aad8ef0922adf3ff721892dfc8eb806d6}{}\label{_camera_8hpp_aad8ef0922adf3ff721892dfc8eb806d6} 
+const G\+Lfloat \hyperlink{_camera_8hpp_aad8ef0922adf3ff721892dfc8eb806d6}{Y\+AW} = -\/90.\+0f
+\begin{DoxyCompactList}\small\item\em Default yaw angle. \end{DoxyCompactList}\item 
+\hypertarget{_camera_8hpp_a4ce864ea1227b9e112d693f8c282290c}{}\label{_camera_8hpp_a4ce864ea1227b9e112d693f8c282290c} 
+const G\+Lfloat \hyperlink{_camera_8hpp_a4ce864ea1227b9e112d693f8c282290c}{P\+I\+T\+CH} = 0.\+0f
+\begin{DoxyCompactList}\small\item\em Default Pitch Angle. \end{DoxyCompactList}\item 
+\hypertarget{_camera_8hpp_aba924f5d1202a01928a09a6e9aefae8d}{}\label{_camera_8hpp_aba924f5d1202a01928a09a6e9aefae8d} 
+const G\+Lfloat \hyperlink{_camera_8hpp_aba924f5d1202a01928a09a6e9aefae8d}{S\+P\+E\+ED} = 50.\+0f
+\begin{DoxyCompactList}\small\item\em Movement Speed. \end{DoxyCompactList}\item 
+\hypertarget{_camera_8hpp_a14c0f77841b503229cbf7dac4c6ef3d7}{}\label{_camera_8hpp_a14c0f77841b503229cbf7dac4c6ef3d7} 
+const G\+Lfloat \hyperlink{_camera_8hpp_a14c0f77841b503229cbf7dac4c6ef3d7}{S\+E\+N\+S\+I\+T\+I\+V\+I\+TY} = 0.\+10f
+\begin{DoxyCompactList}\small\item\em Sensitivity of Mouse Movement. \end{DoxyCompactList}\item 
+\hypertarget{_camera_8hpp_a2d1ba9c31f83438f305a5b773a0d8ab8}{}\label{_camera_8hpp_a2d1ba9c31f83438f305a5b773a0d8ab8} 
+const G\+Lfloat \hyperlink{_camera_8hpp_a2d1ba9c31f83438f305a5b773a0d8ab8}{Z\+O\+OM} = 45.\+0f
+\begin{DoxyCompactList}\small\item\em Zoom default Value;. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Enumeration Type Documentation}
+\hypertarget{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcb}{}\label{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcb} 
+\index{Camera.\+hpp@{Camera.\+hpp}!Camera\+\_\+\+Movement@{Camera\+\_\+\+Movement}}
+\index{Camera\+\_\+\+Movement@{Camera\+\_\+\+Movement}!Camera.\+hpp@{Camera.\+hpp}}
+\subsubsection{\texorpdfstring{Camera\+\_\+\+Movement}{Camera\_Movement}}
+{\footnotesize\ttfamily enum \hyperlink{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcb}{Camera\+\_\+\+Movement}}
+
+
+
+Used to Define the Direction of movement of the camera. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F\+O\+R\+W\+A\+RD@{F\+O\+R\+W\+A\+RD}!Camera.\+hpp@{Camera.\+hpp}}\index{Camera.\+hpp@{Camera.\+hpp}!F\+O\+R\+W\+A\+RD@{F\+O\+R\+W\+A\+RD}}}\hypertarget{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbaa26736999186daf8146f809e863712a1}{}\label{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbaa26736999186daf8146f809e863712a1} 
+F\+O\+R\+W\+A\+RD&Move the \hyperlink{class_camera}{Camera} towards teh target. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{B\+A\+C\+K\+W\+A\+RD@{B\+A\+C\+K\+W\+A\+RD}!Camera.\+hpp@{Camera.\+hpp}}\index{Camera.\+hpp@{Camera.\+hpp}!B\+A\+C\+K\+W\+A\+RD@{B\+A\+C\+K\+W\+A\+RD}}}\hypertarget{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbafed2fca77e454294d6b8bda1bf2c9fd6}{}\label{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbafed2fca77e454294d6b8bda1bf2c9fd6} 
+B\+A\+C\+K\+W\+A\+RD&Move the camera away from the target. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{L\+E\+FT@{L\+E\+FT}!Camera.\+hpp@{Camera.\+hpp}}\index{Camera.\+hpp@{Camera.\+hpp}!L\+E\+FT@{L\+E\+FT}}}\hypertarget{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbadb45120aafd37a973140edee24708065}{}\label{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbadb45120aafd37a973140edee24708065} 
+L\+E\+FT&Move \hyperlink{class_camera}{Camera} to the left. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{R\+I\+G\+HT@{R\+I\+G\+HT}!Camera.\+hpp@{Camera.\+hpp}}\index{Camera.\+hpp@{Camera.\+hpp}!R\+I\+G\+HT@{R\+I\+G\+HT}}}\hypertarget{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbaec8379af7490bb9eaaf579cf17876f38}{}\label{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcbaec8379af7490bb9eaaf579cf17876f38} 
+R\+I\+G\+HT&Move \hyperlink{class_camera}{Camera} to the right. \\
+\hline
+
+\end{DoxyEnumFields}

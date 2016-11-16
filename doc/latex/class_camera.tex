@@ -1,0 +1,146 @@
+\hypertarget{class_camera}{}\section{Camera Class Reference}
+\label{class_camera}\index{Camera@{Camera}}
+
+
+\hyperlink{class_camera}{Camera} Class for Scene\textquotesingle{}s single \hyperlink{class_camera}{Camera}.  
+
+
+
+
+{\ttfamily \#include $<$Camera.\+hpp$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_camera_a535f3a2413a88c2f1e7d1147bec0039c}{Camera} (glm\+::vec3 position=glm\+::vec3(0.\+0f, 0.\+0f, 0.\+0f), glm\+::vec3 up=glm\+::vec3(0.\+0f, 1.\+0f, 0.\+0f), G\+Lfloat yaw=\+Y\+A\+W, G\+Lfloat pitch=\+P\+I\+T\+C\+H)
+\begin{DoxyCompactList}\small\item\em Constructor using vectors. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a1efd973829c22d5fe15a26ede3357ee5}{}\label{class_camera_a1efd973829c22d5fe15a26ede3357ee5} 
+\hyperlink{class_camera_a1efd973829c22d5fe15a26ede3357ee5}{Camera} (G\+Lfloat posX, G\+Lfloat posY, G\+Lfloat posZ, G\+Lfloat upX, G\+Lfloat upY, G\+Lfloat upZ, G\+Lfloat yaw, G\+Lfloat pitch)
+\begin{DoxyCompactList}\small\item\em Constructor using scalar values. \end{DoxyCompactList}\item 
+glm\+::mat4 \hyperlink{class_camera_affa333055635aed96518c4c66be9a70c}{Get\+View\+Matrix} ()
+\begin{DoxyCompactList}\small\item\em Return current view matrix. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_ac7e9a7f3e63c670fd695a8f03d02dbdf}{Process\+Keyboard} (\hyperlink{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcb}{Camera\+\_\+\+Movement} direction, G\+Lfloat \hyperlink{main_8cpp_adf7cb443fa70a647d5603ee33b392102}{delta\+Time})
+\begin{DoxyCompactList}\small\item\em Update \hyperlink{class_camera}{Camera} according to keyboard input. \end{DoxyCompactList}\item 
+void \hyperlink{class_camera_a97ffbf8d8935fc63bd2ca71a4268eec4}{Process\+Mouse\+Movement} (G\+Lfloat xoffset, G\+Lfloat yoffset, G\+Lboolean constrain\+Pitch=true)
+\begin{DoxyCompactList}\small\item\em Updates camera angle from mouse input. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_af269e5ef38e791afb7f4a1dfb8da2399}{}\label{class_camera_af269e5ef38e791afb7f4a1dfb8da2399} 
+void \hyperlink{class_camera_af269e5ef38e791afb7f4a1dfb8da2399}{Process\+Mouse\+Scroll} (G\+Lfloat yoffset)
+\begin{DoxyCompactList}\small\item\em Update camera based on scroll zoom. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_camera_a0a931ed2051befaad1f482b3b5e98ca0}{}\label{class_camera_a0a931ed2051befaad1f482b3b5e98ca0} 
+glm\+::vec3 \hyperlink{class_camera_a0a931ed2051befaad1f482b3b5e98ca0}{\+\_\+position}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_camera}{Camera} Position. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ac610e748840c4b70c9081c2d68df2e8d}{}\label{class_camera_ac610e748840c4b70c9081c2d68df2e8d} 
+glm\+::vec3 \hyperlink{class_camera_ac610e748840c4b70c9081c2d68df2e8d}{\+\_\+front}
+\begin{DoxyCompactList}\small\item\em The \hyperlink{class_camera}{Camera} Target ( where the camera is pointing to ) \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a323a698e4c5773ee3ec380851b145e2d}{}\label{class_camera_a323a698e4c5773ee3ec380851b145e2d} 
+glm\+::vec3 \hyperlink{class_camera_a323a698e4c5773ee3ec380851b145e2d}{\+\_\+up}
+\begin{DoxyCompactList}\small\item\em The up vector. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a4c556280ed181d8589c28eec7ebebb49}{}\label{class_camera_a4c556280ed181d8589c28eec7ebebb49} 
+glm\+::vec3 \hyperlink{class_camera_a4c556280ed181d8589c28eec7ebebb49}{\+\_\+right}
+\begin{DoxyCompactList}\small\item\em The right hand vector to define co-\/ordinate space. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a821cb93133c99177c74ea39339aaa269}{}\label{class_camera_a821cb93133c99177c74ea39339aaa269} 
+glm\+::vec3 \hyperlink{class_camera_a821cb93133c99177c74ea39339aaa269}{\+\_\+world\+Up}
+\begin{DoxyCompactList}\small\item\em The up vector of the worl (\+\_\+right x \+\_\+up) \end{DoxyCompactList}\item 
+\hypertarget{class_camera_ab815461cc043db1f5810c2f488641740}{}\label{class_camera_ab815461cc043db1f5810c2f488641740} 
+G\+Lfloat \hyperlink{class_camera_ab815461cc043db1f5810c2f488641740}{\+\_\+yaw}
+\begin{DoxyCompactList}\small\item\em Current Yaw Angle of camera. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a23a8b8859c44721d7082b89809318918}{}\label{class_camera_a23a8b8859c44721d7082b89809318918} 
+G\+Lfloat \hyperlink{class_camera_a23a8b8859c44721d7082b89809318918}{\+\_\+pitch}
+\begin{DoxyCompactList}\small\item\em Current Pitch Angle of camera. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_aa67131dd5d972aa4c1f6417c04c848c6}{}\label{class_camera_aa67131dd5d972aa4c1f6417c04c848c6} 
+G\+Lfloat \hyperlink{class_camera_aa67131dd5d972aa4c1f6417c04c848c6}{\+\_\+movement\+Speed}
+\begin{DoxyCompactList}\small\item\em Movement speed for keyboard input. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a280396788c971d3470d676a170b176ba}{}\label{class_camera_a280396788c971d3470d676a170b176ba} 
+G\+Lfloat \hyperlink{class_camera_a280396788c971d3470d676a170b176ba}{\+\_\+mouse\+Sensitivity}
+\begin{DoxyCompactList}\small\item\em Mouse Sensititvity for looking around. \end{DoxyCompactList}\item 
+\hypertarget{class_camera_a99dc4d95f58be2427ff6c8d93c676ecd}{}\label{class_camera_a99dc4d95f58be2427ff6c8d93c676ecd} 
+G\+Lfloat {\bfseries \+\_\+zoom}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_camera}{Camera} Class for Scene\textquotesingle{}s single \hyperlink{class_camera}{Camera}. 
+
+Define the view matrix and their individual vectors. Class also provides update functions to move camera based on user interaction with keyboard, mouse movement and mouse scroll. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_camera_a535f3a2413a88c2f1e7d1147bec0039c}{}\label{class_camera_a535f3a2413a88c2f1e7d1147bec0039c} 
+\index{Camera@{Camera}!Camera@{Camera}}
+\index{Camera@{Camera}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Camera()}{Camera()}}
+{\footnotesize\ttfamily Camera\+::\+Camera (\begin{DoxyParamCaption}\item[{glm\+::vec3}]{position = {\ttfamily glm\+:\+:vec3(0.0f,~0.0f,~0.0f)},  }\item[{glm\+::vec3}]{up = {\ttfamily glm\+:\+:vec3(0.0f,~1.0f,~0.0f)},  }\item[{G\+Lfloat}]{yaw = {\ttfamily \hyperlink{_camera_8hpp_aad8ef0922adf3ff721892dfc8eb806d6}{Y\+AW}},  }\item[{G\+Lfloat}]{pitch = {\ttfamily \hyperlink{_camera_8hpp_a4ce864ea1227b9e112d693f8c282290c}{P\+I\+T\+CH}} }\end{DoxyParamCaption})}
+
+
+
+Constructor using vectors. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em position} & The starting \hyperlink{class_camera}{Camera} Position \\
+\hline
+{\em up} & The up vector for the scene (Not the Co-\/ordinate space up vector) \\
+\hline
+{\em yaw} & The starting yaw value \\
+\hline
+{\em pitch} & the Starting pitch value \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_camera_affa333055635aed96518c4c66be9a70c}{}\label{class_camera_affa333055635aed96518c4c66be9a70c} 
+\index{Camera@{Camera}!Get\+View\+Matrix@{Get\+View\+Matrix}}
+\index{Get\+View\+Matrix@{Get\+View\+Matrix}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Get\+View\+Matrix()}{GetViewMatrix()}}
+{\footnotesize\ttfamily glm\+::mat4 Camera\+::\+Get\+View\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Return current view matrix. 
+
+\begin{DoxyReturn}{Returns}
+The look\+At as defined by current vectors 
+\end{DoxyReturn}
+\hypertarget{class_camera_ac7e9a7f3e63c670fd695a8f03d02dbdf}{}\label{class_camera_ac7e9a7f3e63c670fd695a8f03d02dbdf} 
+\index{Camera@{Camera}!Process\+Keyboard@{Process\+Keyboard}}
+\index{Process\+Keyboard@{Process\+Keyboard}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Process\+Keyboard()}{ProcessKeyboard()}}
+{\footnotesize\ttfamily void Camera\+::\+Process\+Keyboard (\begin{DoxyParamCaption}\item[{\hyperlink{_camera_8hpp_a605494501af59c9191e7e4d6f9a0ebcb}{Camera\+\_\+\+Movement}}]{direction,  }\item[{G\+Lfloat}]{delta\+Time }\end{DoxyParamCaption})}
+
+
+
+Update \hyperlink{class_camera}{Camera} according to keyboard input. 
+
+Takes the results of the keyboard scrollback function to manipulate the camera vectors and look\+At matrix to provide desired view of scene 
+\begin{DoxyParams}{Parameters}
+{\em direction} & The direction of camera movement \\
+\hline
+{\em delta\+Time} & To smooth movement across different frame rates \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_camera_a97ffbf8d8935fc63bd2ca71a4268eec4}{}\label{class_camera_a97ffbf8d8935fc63bd2ca71a4268eec4} 
+\index{Camera@{Camera}!Process\+Mouse\+Movement@{Process\+Mouse\+Movement}}
+\index{Process\+Mouse\+Movement@{Process\+Mouse\+Movement}!Camera@{Camera}}
+\subsubsection{\texorpdfstring{Process\+Mouse\+Movement()}{ProcessMouseMovement()}}
+{\footnotesize\ttfamily void Camera\+::\+Process\+Mouse\+Movement (\begin{DoxyParamCaption}\item[{G\+Lfloat}]{xoffset,  }\item[{G\+Lfloat}]{yoffset,  }\item[{G\+Lboolean}]{constrain\+Pitch = {\ttfamily true} }\end{DoxyParamCaption})}
+
+
+
+Updates camera angle from mouse input. 
+
+Proceeds from the cursor\+\_\+callback function to rotate/roll/pitch camera in desired direction based on user mouse movement. 
+\begin{DoxyParams}{Parameters}
+{\em xoffset,yoffset} & Mouse movement \\
+\hline
+{\em constrain\+Pitch} & to Ensure view does not flip when user looks too high/low \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_camera_8hpp}{Camera.\+hpp}\item 
+\hyperlink{_camera_8cpp}{Camera.\+cpp}\end{DoxyCompactItemize}
